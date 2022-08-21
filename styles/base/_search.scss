@@ -1,0 +1,139 @@
+.search {
+    @include size (320px, 230px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title5 {
+    width: 250px;
+    margin: 27px 0 0 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    &__holiday {
+        font-family: $main-font;
+        @include font-size (22px, 700, 27px);
+        letter-spacing: 0.75px;
+    }
+}
+
+
+
+.question {
+    width: 290px;
+    margin: 19px 0 0 10px;
+    color: hsl(0, 0%, 40%);
+    font-family: $second-font;
+    @include font-size (18px, 300, 14px);
+}
+
+@media screen and (min-width: 760px) {
+    .search {
+        @include size (700px, 230px);
+
+    }
+
+    .title5 {
+        width: 303px;
+        margin: 68px 0 0 0;
+
+    }
+
+    .question {
+
+        margin: 54px 0 0 17px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .title5 {
+        width: 358px;
+        margin: 61px 10px 0 0;
+
+        &__holiday {
+            @include font-size (26px, 700, 32px);
+        }
+    }
+
+    .question {
+
+        margin: 54px 0 0 18px;
+    }
+
+
+}
+
+.interes {
+
+    &__search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__place {
+            @include size (275px, 37px);
+            margin: 15px 0 0 0;
+            background: #FFFFFF;
+            border: 1px solid #D4D4D4;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+            border-radius: 3px;
+
+
+        }
+
+        input::placeholder {
+            position: relative;
+            top: 1px;
+            left: 12px;
+            color: #999999;
+            font-family: $second-font;
+            @include font-size (14px, 300, 14px);
+        }
+
+        &__button {
+            @include size (280px, 40px);
+            background-color: #FF4E50;
+            border: #FF4E50;
+            border-radius: 40px;
+            margin: 8px 0 0 0;
+            color: #F7F3F2;
+            @include font-size (14px, 700, 17px);
+            word-spacing: 2px;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .interes {
+        &__search {
+            width: 492px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 10px 0 0 5px;
+
+            &__place {
+                @include size (293px, 36px);
+
+            }
+
+            &__button {
+                @include size (172.12px, 40px);
+                margin: 15px 0 0 0;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .interes{
+        &__search {
+            margin: 10px 3px 0 0;
+            
+        }
+    }
+    
+}

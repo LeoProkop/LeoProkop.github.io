@@ -1,0 +1,265 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.title {
+    @include size (289px, 27px);
+    text-align: center;
+
+    &__question {
+        font-family: $main-font;
+        @include font-size (22px, 700, 27px);
+        margin: 34px 0 0 0;
+        letter-spacing: 0.75px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .title {
+        @include size (758px, 27px);
+        margin: 89px 0 0 0;
+
+        &__question {
+            text-align: center;
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .title {
+        width: 957px;
+        margin: 90px 0 0 0;
+
+        &__question {
+            text-align: center;
+            @include font-size (26px, 700, 32px);
+        }
+
+    }
+
+}
+
+.steps {
+    &__step1 {
+        @include size (300px, 240px);
+        margin: 15px 0 0 0;
+        background: url('../images/Step1.png');
+        border: 1px solid #fff;
+        border-radius: 4px;
+
+    }
+
+    &__step2 {
+        @include size (300px, 240px);
+        margin: 10px 0 0 0;
+        background: url('../images/Step2.png');
+        border: 1px solid #fff;
+        border-radius: 4px;
+
+
+        .position {
+            margin: 94px 0 0 20px;
+
+            &__title {
+                margin: 31px 0 0 0;
+            }
+        }
+
+    }
+
+    &__step3 {
+        @include size (300px, 240px);
+        margin: 10px 0 0 0;
+        background: url('../images/Step3.png');
+        border: 1px solid #fff;
+        border-radius: 4px;
+
+
+    }
+}
+
+
+.position {
+    margin: 64px 0 0 20px;
+
+    &__red-button {
+        @include size (70px, 20px);
+        background: #FF4E50;
+        border-radius: 40px;
+        @include position (flex, center, center);
+
+        &__word {
+            font-family: $main-font;
+            color: $title-color;
+            @include font-size (10px, 400, 12px);
+        }
+    }
+
+    &__title {
+        margin: 46px 0 0 0;
+
+        &__text {
+            font-family: $main-font;
+            color: $title-color;
+            @include font-size (24px, 700, 14px);
+            letter-spacing: 1px;
+        }
+    }
+
+    &__little {
+        @include size (250px, 57px);
+        margin: 25px 0 0 0;
+
+        &__letter {
+            font-family: $second-font;
+
+            @include font-size (14px, 300, 14px);
+            color: $title-color;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .steps {
+        width: 765px;
+        margin: 35px auto;
+        display: flex;
+        justify-content: space-around;
+
+        &__step1 {
+            background: url('../images/Step 1 image.png');
+            @include size (236px, 400px);
+            margin: 0;
+
+            .position {
+                margin: 205px 0 0 20px;
+
+                &__little {
+                    width: 196px;
+                }
+
+            }
+
+        }
+
+        &__step2 {
+            background: url('../images/Step(2).png') no-repeat;
+            @include size (236px, 400px);
+            margin: 0;
+
+            .position {
+                margin: 254px 0 0 20px;
+
+                &__title {
+                    width: 196px;
+                    margin: 17px 0 0 0;
+                }
+
+                &__little {
+                    width: 196px;
+                }
+
+            }
+
+        }
+
+        &__step3 {
+            background: url('../images/Step 3 image.png') no-repeat;
+            @include size (236px, 400px);
+            margin: 0;
+
+            .position {
+                margin: 205px 0 0 20px;
+
+
+                &__little {
+                    width: 196px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .steps {
+        width: 957px;
+        margin: 38px auto;
+
+        &__step1 {
+            background: rgb(170, 170, 170) url('../images/Step1(1).png');
+            background-blend-mode: multiply;
+            @include size (300px, 400px);
+
+            .position {
+                margin: 218px 0 0 20px;
+
+                &__title {
+                    @include size (250px, 60px);
+                    margin: 25px 0 0 4px;
+
+                    &__text {
+                        @include font-size (24px, 700, 26px);
+                    }
+                }
+
+                &__little {
+                    width: 250px;
+                    margin: 14px 0 0 2px;
+                }
+            }
+        }
+
+        &__step2 {
+            background: url('../images/Step2(2).png');
+            @include size (300px, 400px);
+
+            .position {
+                margin: 250px 0 0 23px;
+
+                &__title {
+                    width: 250px;
+                    margin: 25px 0 0 2px;
+
+                    &__text {
+                        @include font-size (24px, 700, 26px);
+                    }
+                }
+
+                &__little {
+                    width: 250px;
+                    margin: 15px 0 0 0;
+                }
+            }
+        }
+
+        &__step3 {
+            background: rgb(170, 170, 170) url('../images/Step3(4).png');
+            background-blend-mode: multiply;
+            @include size (300px, 400px);
+
+            .position {
+                margin: 220px 0 0 21px;
+
+                &__title {
+                    @include size (250px, 60px);
+                    margin: 25px 0 0 4px;
+
+                    &__text {
+                        @include font-size (24px, 700, 26px);
+                    }
+                }
+
+                &__little {
+                    width: 250px;
+                    margin: 14px 0 0 2px;
+                }
+            }
+        }
+    }
+}

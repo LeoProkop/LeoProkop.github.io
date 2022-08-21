@@ -1,0 +1,16 @@
+@mixin size ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin font-size ($s, $w, $l) {
+    font-size: $s;
+    font-weight: $w;
+    line-height: $l;
+}
+
+@mixin position ($f, $j, $a) {
+    display: $f;
+    justify-content: $j;
+    align-items: $a;
+}

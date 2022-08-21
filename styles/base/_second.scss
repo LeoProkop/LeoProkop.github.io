@@ -1,0 +1,309 @@
+.second {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title2 {
+    width: 280px;
+    margin: 36px 0 0 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+
+    &__offer {
+        font-family: $main-font;
+        @include font-size (22px, 700, 27px);
+        letter-spacing: 0.75px;
+
+
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .second {
+        width: 760px;
+    }
+
+    .title2 {
+        width: 760px;
+        text-align: center;
+        margin: 64px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .second {
+        width: 1000px;
+    }
+
+    .title2 {
+        width: 1400px;
+        margin: 52px 0 0 0;
+        text-align: center;
+
+        &__offer {
+            @include font-size (27px, 700, 32px);
+            letter-spacing: 0.5px;
+
+
+        }
+
+
+    }
+}
+
+
+
+.persons {
+    width: 236px;
+
+    &__person2 {
+        margin: 16px 0 0 0;
+
+        .avatar {
+            &__icon {
+                background-color: #FFA710;
+            }
+        }
+
+        .information {
+            &__hobby {
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+
+    &__person3 {
+        margin: 17px 0 0 0;
+
+        .avatar {
+            &__icon {
+                background-color: #19D4CA;
+            }
+        }
+
+        .information {
+            &__hobby {
+                margin: 6px 0 0 0;
+            }
+        }
+    }
+
+    &__person4 {
+        margin: 17px 0 0 0;
+
+        .avatar {
+            &__icon {
+                background-color: #667DF3;
+
+                &__musik {
+                    @include size (25px, 27px);
+                }
+            }
+        }
+
+        .information {
+            &__hobby {
+                margin: 6px 0 0 0;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 760px) {
+    .persons {
+        width: 505px;
+        display: flex;
+        margin: 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+
+        &__person1 {
+            margin: 21px 0 0 0;
+
+            .information {
+                &__hobby {
+                    margin: 6px 0 0 0;
+                }
+            }
+
+        }
+
+        &__person2 {
+            margin: 21px 0 0 0;
+
+            .information {
+                &__hobby {
+                    margin: 11px 0 0 0;
+                }
+            }
+        }
+
+        &__person3 {
+            margin: 20px 0 0 0;
+
+            .information {
+                &__hobby {
+                    margin: 6px 0 0 0;
+                }
+            }
+        }
+
+        &__person4 {
+            margin: 20px 0 0 0;
+
+            .information {
+                &__hobby {
+                    margin: 6px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .persons {
+        width: 941px;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+
+        &__person1 {
+            margin: 21px 5px 0 0;
+            order: 1;
+
+            .information {
+                &__hobby {
+                    width: 221px;
+                    margin: 6px 0 0 8px;
+                }
+            }
+        }
+
+        &__person2 {
+            margin: 21px 4px 0 0;
+            order: 3;
+
+            .information {
+                &__hobby {
+                    width: 221px;
+                    margin: 11px 0 0 14px;
+                }
+            }
+        }
+
+        &__person3 {
+            margin: 20px 5px 0 0;
+            order: 2;
+
+
+            .information {
+                &__name {
+                    margin: 20px 0 0 0;
+
+                }
+
+                &__hobby {
+                    margin: 21px 0 0 4px;
+                }
+            }
+        }
+
+        &__person4 {
+            margin: 20px 0 0 0;
+            order: 4;
+
+            .information {
+                &__name {
+                    margin: 19px 0 0 2px;
+                }
+
+                &__hobby {
+                    width: 221px;
+                    margin: 27px 0 0 0;
+                }
+            }
+        }
+
+
+
+    }
+}
+
+.avatar {
+    margin: 14px 30px 0 0;
+    display: flex;
+    justify-content: center;
+
+    &__icon {
+        background-color: #FF4E50;
+        @include size (32px, 32px);
+        border-radius: 50%;
+        @include position (flex, center, center);
+        position: relative;
+        top: 88px;
+        left: 119px;
+
+        &__musik {
+            @include size (16px, 16px);
+        }
+    }
+}
+
+.information {
+    width: 236px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__name {
+        margin: 17px;
+        font-family: $main-font;
+        @include font-size (14px, 800, 17px);
+    }
+
+    &__hobby {
+        width: 250px;
+        text-align: center;
+        margin: 6px 6px 0 0;
+        color: hsl(0, 0%, 40%);
+        font-family: $second-font;
+        @include font-size (14px, 300, 14px);
+    }
+}
+
+
+.second__button {
+    &__link {
+        @include size (280px, 40px);
+        background-color: #FFFFFF;
+        border: 2px solid #FF4E50;
+        border-radius: 40px;
+        margin: 35px 0 0 0;
+        color: #FF4E50;
+        @include font-size (14px, 700, 17px);
+        word-spacing: 2px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .second__button {
+        margin: 7px 0 0 0;
+
+        &__link {
+            @include size (180px, 40px);
+        }
+
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .second__button {
+        margin: 1px 0 0 0;
+    }
+}
